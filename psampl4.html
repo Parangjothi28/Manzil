@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang = "en">
+   <head>
+      <meta charset = "utf-8">
+      
+      <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      
+      <!-- CSS -->
+      <style>
+         .ui-widget-header,.ui-state-default, ui-button {
+            background:#b9cd6d;
+            border: 1px solid #b9cd6d;
+            color: #FFFFFF;
+            font-weight: bold;
+         }
+      </style>
+      
+      <!-- Javascript -->
+      <script>
+         $(function() {
+            $( "#dialog-2" ).dialog({
+               autoOpen: false, 
+               buttons: {
+                  BOOK: function() {$(this).dialog("close");}
+               },
+               title: "PARIS",
+               position: {
+                  my: "center",
+                  at: "center"
+               }
+            });
+            $( "#opener-2" ).click(function() {
+               $( "#dialog-2" ).dialog( "open" );
+            });
+         });
+      </script>
+   </head>
+   
+   <body>
+      <!-- HTML --> 
+      <div id = "dialog-2"
+         title = "PARIS">Lingering over pain au chocolat in a sidewalk café, relaxing after a day of strolling along the Seine and marveling at icons like the Eiffel Tower and the Arc de Triomphe… the perfect Paris experience combines leisure and liveliness with enough time to savor both an exquisite meal and exhibits at the Louvre. Awaken your spirit at Notre Dame, bargain hunt at the Marché aux Puces de Montreuil or for goodies at the Marché Biologique Raspail, then cap it all off with a risqué show at the Moulin Rouge.</div>
+      <button id = "opener-2">Open Dialog</button>
+   </body>
+</html>

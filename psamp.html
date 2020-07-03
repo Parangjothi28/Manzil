@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset = "utf-8">
+      
+      <link href = "https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+         rel = "stylesheet">
+      <script src = "https://code.jquery.com/jquery-1.10.2.js"></script>
+      <script src = "https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+      
+      <!-- CSS -->
+      <style>
+         .ui-widget-header,.ui-state-default, ui-button {
+            background:#b9cd6d;
+            border: 1px solid #b9cd6d;
+            color: #FFFFFF;
+            
+          
+            font-weight: bold;
+         }
+      </style>
+      
+      <!-- Javascript -->
+      <script>
+         $(function() {
+            $( "#dialog-2" ).dialog({
+               autoOpen: false, 
+
+               buttons: {
+                  BOOK: function() {$(this).dialog("close");}
+               },
+               title: "PARIS",
+               position: {
+                  my: "center",
+                  at: "center"
+               }
+            });
+            $( "#opener-2" ).click(function() {
+               $( "#dialog-2" ).dialog( "open" );
+            });
+         });
+      </script>
+
+
+<style>
+.b1 {
+	display: inline-block;
+    background-color: black;
+    width: 350px;
+    border: 5px solid green;
+    padding: 5px;
+    margin: 25px;
+    margin-left: 100px;
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 350px;
+    width: 350px;
+  -webkit-transition: all 2s ease;
+     -moz-transition: all 2s ease;
+      -ms-transition: all 2s ease;
+          transition: all 2s ease;
+}
+
+
+
+.b1:hover {
+  width: 390px;
+  height: 390px;
+}
+
+.b2{
+
+	font-family: Trattatello, fantasy ;
+	font-size: 150%;
+	left: 50%;
+	
+
+}
+
+</style>
+</head>
+<body>
+
+
+
+<div id = "dialog-2"
+         title = "PARIS">Lingering over pain au chocolat in a sidewalk café, relaxing after a day of strolling along the Seine and marveling at icons like the Eiffel Tower and the Arc de Triomphe… the perfect Paris experience combines leisure and liveliness with enough time to savor both an exquisite meal and exhibits at the Louvre. Awaken your spirit at Notre Dame, bargain hunt at the Marché aux Puces de Montreuil or for goodies at the Marché Biologique Raspail, then cap it all off with a risqué show at the Moulin Rouge.</div>
+<a id="opener-2" class="b1" ><img src="paris.jpg" alt="Paris" width="350" height="350"> <div class="b2">PARIS</div></a>
+
+<a onclick="myfunction();" class="b1"><img src="london.jpg" alt="Paris" width="350" height="350"><div class="b2">LONDON</div></a>
+
+<a href="#" onclick="window.open( 'paris.html', 'name', 'location=no,scrollbars=yes,status=no,toolbar=yes,resizable=yes' )" class="b1"><img src="newyork.jpg" alt="Paris" width="350" height="350"><div class="b2">NEWYORK</div></a>
+
+<a href="dubai.html" class="b1"><img src="dubai.jpg" alt="Paris" width="350" height="350"><div class="b2">DUBAI</div></a>
+
+<a href="goa.html" class="b1"><img src="goa.jpg" alt="Paris" width="350" height="350"><div class="b2">GOA</div></a>
+
+<a href="singapore.html" class="b1"><img src="singapore.jpg" alt="Paris" width="350" height="350"><div class="b2">SINGAPORE</div></a>
+
+<a href="sydney.html" class="b1"><img src="sydney.jpg" alt="Paris" width="350" height="350"><div class="b2">SYDNEY</div></a>
+
+<a href="venice.html" class="b1"><img src="venice.jpg" alt="Paris" width="350" height="350"><div class="b2">VENICE</div></a>
+
+<a href="florence.html" class="b1"><img src="florence.jpg" alt="Paris" width="350" height="350"><div class="b2">FLORENCE</div></a>s
+
+</body>
+</html>
