@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="ssamp.css">
+</head>
+<body>
+<ul>
+  <li><a class="active" href="project.html">Home</a></li>
+  <li><a href="psample2.html">Destinations</a></li>
+  <li><a href="ssamp.html">Hotel Reservation</a></li>
+  <li><a href="gamification.html">Take A Survey!</a></li>
+  
+</ul>
+<h1 align="center" style="font-size: 350%">HOTEL RESERVATION</h1>
+<form name="contactform" method="post" action="send_form_email.php" style="text-align: center;">
+<table style="padding-top: 50px;" width="900px" align="center">
+<tr>
+ <td>
+  <label style="font-size: 24px; color: white" for="first_name">First Name <span style="color: red">*</span></label>
+  <br>
+ </td>
+ <br>
+ <td valign="top">
+  <input type="text" name="first_name" style="width: 450px; height: 30px">
+  <br>
+ </td>
+</tr>
+<tr>
+ <td valign="top"">
+  <label style="padding-bottom: 18px; font-size: 24px; color: white" for="last_name">Last Name <span style="color: red">*</span></label>
+  <br>
+ </td>
+ <td valign="top">
+  <input  type="text" name="last_name" style="width: 450px; height: 30px">
+  <br>
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label style="padding-bottom: 18px; font-size: 24px; color: white" for="email">Email Address <span style="color: red">*</span></label>
+  <br>
+ </td>
+ <td valign="top">
+  <input  type="text" name="email" style="width: 450px; height: 30px">
+  <br>
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label style="padding-bottom: 18px; font-size: 24px; color: white" for="telephone">Telephone Number <span style="color: red">*</span></label>
+  <br>
+ </td>
+ <td valign="top">
+  <input  type="text" name="telephone" style="width: 450px; height: 30px">
+  <br>
+ </td>
+</tr>
+<tr>
+ <td valign="top">
+  <label style="padding-bottom: 18px; font-size: 24px; color: white" for="comments">Comments <span style="color: red">*</span></label>
+  <br>
+ </td>
+ <td valign="top">
+  <textarea  name="comments" style="height: 100px; width: 450px"></textarea>
+  <br>
+ </td>
+</tr>
+<tr>
+ <td colspan="2" style="text-align:center">
+  <input type="submit" value="Submit" onclick="location.href='gamification.html'" style="width: 100px; height: 100px">   
+ </td>
+</tr>
+</table>
+</form>
+</body>
+</html>

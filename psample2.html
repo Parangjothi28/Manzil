@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+  <script type="text/javascript" src="jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+
+
+<style>
+
+body {
+background-image: url(back5.jpg);
+-moz-background-size: cover;
+-webkit-background-size: cover;
+background-size: cover;
+background-position: top center !important;
+background-repeat: no-repeat !important;
+background-attachment: fixed;
+
+
+}
+
+h1 {
+	color: red;
+	font-size: 120px;
+} 
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 26px;
+    text-decoration: none;
+    font-size: 40px
+}
+
+li a:hover {
+    background-color: #111;
+}
+
+.b1 {
+	display: inline-block;
+	background-color: black;
+    width: 350px;
+    
+    
+    
+    margin: 25px;
+    margin-left: 100px;
+    position: relative;
+    text-align: center;
+    color: white;
+    height: 350px;
+    width: 350px;
+    -webkit-transition: all 2s ease;
+     -moz-transition: all 2s ease;
+      -ms-transition: all 2s ease;
+          transition: all 2s ease;
+    
+}
+  
+
+
+
+
+.b1:hover {
+	width: 390px;
+  height: 390px;
+
+  
+  
+
+}
+
+
+.b2 {
+
+	font-family: Trattatello, fantasy ;
+	font-size: 150%;
+	left: 50%;
+	color: white;
+	
+
+}
+
+
+
+#gallerywrapper {
+     width:400px;
+     height:400px;
+     
+     font-family:verdana, arial, sans-serif;
+ } 
+
+ #gallerywrapper #gallery {
+     position:absolute;
+     left:0;
+     top:0;
+     height:400px;
+     width:400px;
+     overflow:hidden;
+     text-align:center;
+ } 
+
+ #gallerywrapper #gallery div {
+     width:500px; height:500px; 
+     padding-top:10px; 
+     
+ } 
+
+ #gallerywrapper #gallery div img {
+     clear:both; 
+     display:block; 
+     margin:0 auto; 
+     border:0;
+ } 
+
+ #gallerywrapper #gallery div h3 {
+     padding:10px 0 0 0; 
+     margin:0; 
+     font-size:18px;
+ } 
+
+ #gallerywrapper #gallery div p {
+     padding:5px 0; 
+     margin:0; 
+     font-size:12px; 
+     line-height:18px;
+ } 
+
+ #gallery .previous{ 
+     display:inline;
+     float:left;
+     margin-left:120px;
+     text-decoration:none;
+ } 
+
+ #gallery .next{ 
+     display:inline;
+     float:right;
+     margin-right:120px;
+     text-decoration:none;
+ }
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+	<ul>
+  <li><a class="active" href="project.html">Home</a></li>
+  <li><a href="psample2.html">Destinations</a></li>
+  <li><a href="ssamp.html">Hotel Reservation</a></li>
+  <li><a href="gamification.html">Take A Survey!</a></li>
+  
+</ul>
+
+<embed src="goasound.wav" width="0" height="0" loop="false" autostart="true" hidden="true" />
+
+<h1 align="center">DESTINATIONS</h1>
+
+
+<a class="b1" data-toggle="modal" data-target="#myModal"><img src="paris.jpg" alt="Paris" width="350" height="350"> <div class="b2">PARIS</div></a>
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"></h4>
+        </div>
+        <div class="modal-body">
+        	<div id="gallerywrapper">
+	    <div id="gallery">
+		    <div id="pic1">
+			    <img src="paris1.jpg" height="300" width="300" alt="Image 1">
+			    <a class="previous" href="#pic4">&lt;</a>
+			    <a class="next" href="#pic2">&gt;</a>
+			    <h3>Louvre Museum</h3>
+			    
+		    </div>
+		    <div id="pic2">
+			    <img src="paris2.jpg" height="300" width="300" alt="Image 2">
+			    <a class="previous" href="#pic1">&lt;</a>
+			    <a class="next" href="#pic3">&gt;</a>
+			    <h3>Notre Dame</h3>
+			    
+		    </div>
+		    <div id="pic3">
+			    <img src="paris3.jpg" height="300" width="300" alt="Image 3">
+			    <a class="previous" href="#pic2">&lt;</a>
+			    <a class="next" href="#pic4">&gt;</a>
+			    <h3>Eiffel Tower</h3>
+			    
+			</div>
+			<div id="pic4">
+			    <img src="paris4.jpg" height="300" width="300" alt="Image 4">
+			    <a class="previous" href="#pic3">&lt;</a>
+			    <a class="next" href="#pic1">&gt;</a>
+			    <h3>The Mona Lisa</h3>
+			    
+		    </div>
+		    
+	    </div>
+	</div>
+          <p>Everyone who visits Paris for the first time probably has the same punchlist of major attractions to hit: The Louvre, Notre Dame, The Eiffel Tower, etc. Just make sure you leave some time to wander the city&rsquo;s grand boulevards and eat in as many cafes, bistros and brasseries as possible. And don&rsquo;t forget the shopping—whether your tastes run to Louis Vuitton or Les Puces (the flea market), you can find it here. </p>
+        </div>
+        <div class="modal-footer">
+        	<button type="button" class="btn btn-default" onclick="location.href='ssamp.html'">Book Now</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+
+<a class="b1" data-toggle="modal" data-target="#myModal2"><img src="london.jpg" alt="Paris" width="350" height="350"><div class="b2">LONDON</div></a>
+
+<div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"></h4>
+        </div>
+        <div class="modal-body">
+        	<div id="gallerywrapper">
+	    <div id="gallery">
+		    <div id="pic5">
+			    <img src="london1.jpg" height="300" width="300" alt="Image 1">
+			    <a class="previous" href="#pic8">&lt;</a>
+			    <a class="next" href="#pic6">&gt;</a>
+			    <h3>Tower of London</h3>
+			    
+		    </div>
+		    <div id="pic6">
+			    <img src="london2.jpg" height="300" width="300" alt="Image 2">
+			    <a class="previous" href="#pic5">&lt;</a>
+			    <a class="next" href="#pic7">&gt;</a>
+			    <h3>Buckingham Palace</h3>
+			    
+		    </div>
+		    <div id="pic7">
+			    <img src="london3.jpg" height="300" width="300" alt="Image 3">
+			    <a class="previous" href="#pic6">&lt;</a>
+			    <a class="next" href="#pic8">&gt;</a>
+			    <h3>Big Ben</h3>
+			    
+			</div>
+			<div id="pic8">
+			    <img src="london4.jpg" height="300" width="300" alt="Image 4">
+			    <a class="previous" href="#pic7">&lt;</a>
+			    <a class="next" href="#pic5">&gt;</a>
+			    <h3>National Gallery</h3>
+			    
+		    </div>
+		    
+	    </div>
+	</div>
+          <p>There&rsquo;s so much to see and do in London, it&rsquo;s easy to be overwhelmed. Major sights like the Tower of London and Buckingham Palace are on most visitors&rsquo; itineraries, but no matter what your interests, you&rsquo;ll probably find something here. Art lovers should make a beeline for the National Gallery and the Tate Modern. If military history&rsquo;s your thing, don&rsquo;t miss the Cabinet War Rooms. Finally, forget everything you&rsquo;ve heard about bland, mushy British food—the restaurant scene here is fabulous. </p>
+        </div>
+        <div class="modal-footer">
+        	<button type="button" class="btn btn-default" onclick="location.href='ssamp.html'">Book Now</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+
+
+<a class="b1" data-toggle="modal" data-target="#myModal3"><img src="newyork.jpg" alt="Paris" width="350" height="350"><div class="b2">NEWYORK</div></a>
+
+<div class="modal fade" id="myModal3" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"></h4>
+        </div>
+        <div class="modal-body">
+        	<div id="gallerywrapper">
+	    <div id="gallery">
+		    <div id="pic9">
+			    <img src="new1.jpg" height="300" width="300" alt="Image 1">
+			    <a class="previous" href="#pic10">&lt;</a>
+			    <a class="next" href="#pic12">&gt;</a>
+			    <h3>Statue of Liberty</h3>
+			    
+		    </div>
+		    <div id="pic10">
+			    <img src="new2.jpg" height="300" width="300" alt="Image 2">
+			    <a class="previous" href="#pic11">&lt;</a>
+			    <a class="next" href="#pic9">&gt;</a>
+			    <h3>The Met</h3>
+			    
+		    </div>
+		    <div id="pic11">
+			    <img src="new3.jpg" height="300" width="300" alt="Image 3">
+			    <a class="previous" href="#pic12">&lt;</a>
+			    <a class="next" href="#pic10">&gt;</a>
+			    <h3>Times Square</h3>
+			    
+			</div>
+			<div id="pic12">
+			    <img src="new4.jpg" height="300" width="300" alt="Image 4">
+			    <a class="previous" href="#pic9">&lt;</a>
+			    <a class="next" href="#pic11">&gt;</a>
+			    <h3>Brooklyn Bridge</h3>
+			    
+		    </div>
+		    
+	    </div>
+	</div>
+          <p>The first time you go to New York, go ahead and be a sight-seer.Everyone should visit the Statue of Liberty, the Met, Times Square, etc. But on a return trip, pick a neighbourhood and go deep. You&rsquo;ll find hole-in-the-wall bars, great delis, quirky shops… exploring the non-touristy side of New York is an incredibly rewarding experience for a traveller. </p>
+        </div>
+        <div class="modal-footer">
+        	<button type="button" class="btn btn-default" onclick="location.href='ssamp.html'">Book Now</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+<a data-toggle="modal" data-target="#myModal4" class="b1"><img src="dubai.jpg" alt="Paris" width="350" height="350"><div class="b2">DUBAI</div></a>
+
+<div class="modal fade" id="myModal4" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"></h4>
+        </div>
+        <div class="modal-body">
+
+        	<div id="gallerywrapper">
+	    <div id="gallery">
+		    <div id="pic13">
+			    <img src="dubai1.jpg" height="300" width="300" alt="Image 1">
+			    <a class="previous" href="#pic14">&lt;</a>
+			    <a class="next" href="#pic16">&gt;</a>
+			    <h3>Dubai Opera</h3>
+			    
+		    </div>
+		    <div id="pic14">
+			    <img src="dubai2.jpg" height="300" width="300" alt="Image 2">
+			    <a class="previous" href="#pic15">&lt;</a>
+			    <a class="next" href="#pic13">&gt;</a>
+			    <h3>Burj Khalifa</h3>
+			    
+		    </div>
+		    <div id="pic15">
+			    <img src="dubai3.jpg" height="300" width="300" alt="Image 3">
+			    <a class="previous" href="#pic16">&lt;</a>
+			    <a class="next" href="#pic14">&gt;</a>
+			    <h3>Hot Air Balloon </h3>
+			    
+			</div>
+			<div id="pic16">
+			    <img src="dubai4.jpg" height="300" width="300" alt="Image 4">
+			    <a class="previous" href="#pic13">&lt;</a>
+			    <a class="next" href="#pic15">&gt;</a>
+			    <h3>Palm Jumeriah</h3>
+			    
+		    </div>
+		    
+	    </div>
+	</div>
+
+<p>Dubai is a destination that mixes modern culture with history, adventure with world-class shopping and entertainment. Catch a show at the Dubai Opera, see downtown from atop the Burj Khalifa and spend an afternoon along Dubai Creek exploring the gold, textile and spice souks. If you&rsquo;re looking for thrills, you can float above the desert dunes in a hot air balloon, climb aboard a high-speed ride at IMG Worlds of Adventure or skydive over the Palm Jumeirah.</p>
+          
+        </div>
+        <div class="modal-footer">
+        	<button type="button" class="btn btn-default" onclick="location.href='ssamp.html'">Book Now</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+<a data-toggle="modal" data-target="#myModal5" class="b1"><img src="goa.jpg" alt="Paris" width="350" height="350"><div class="b2">GOA</div></a>
+
+<div class="modal fade" id="myModal5" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"></h4>
+        </div>
+        <div class="modal-body">
+        	<div id="gallerywrapper">
+	    <div id="gallery">
+		    <div id="pic17">
+			    <img src="goa1.jpg" height="300" width="300" alt="Image 1">
+			    <a class="previous" href="#pic18">&lt;</a>
+			    <a class="next" href="#pic20">&gt;</a>
+			    <h3>Baga Beach</h3>
+			    
+		    </div>
+		    <div id="pic18">
+			    <img src="goa2.jpg" height="300" width="300" alt="Image 2">
+			    <a class="previous" href="#pic19">&lt;</a>
+			    <a class="next" href="#pic17">&gt;</a>
+			    <h3>Bom Jesus Basillica</h3>
+			    
+		    </div>
+		    <div id="pic19">
+			    <img src="goa3.jpg" height="300" width="300" alt="Image 3">
+			    <a class="previous" href="#pic20">&lt;</a>
+			    <a class="next" href="#pic18">&gt;</a>
+			    <h3>Candolium</h3>
+			    
+			</div>
+			<div id="pic20">
+			    <img src="goa4.jpg" height="300" width="300" alt="Image 4">
+			    <a class="previous" href="#pic17">&lt;</a>
+			    <a class="next" href="#pic19">&gt;</a>
+			    <h3>Aguada Fort</h3>
+			    
+		    </div>
+		    
+	    </div>
+	</div>
+          <p>East meets West in this sun-soaked state, where Indian culture intertwines with Portuguese influences left over from a 500-year occupation. The beaches have long served as a magnet for serene hedonists. To the north, the tourist-centric scene is prevalent, with an international flair that is now skewing more hip than hippie. Travel south for stretches of unspoiled sand and an escape from large resorts. Temples, mosques and wildlife sanctuaries provide diversions from the beach.</p>
+        </div>
+        <div class="modal-footer">
+        	<button type="button" class="btn btn-default" onclick="location.href='ssamp.html'">Book Now</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+<a data-toggle="modal" data-target="#myModal6"class="b1"><img src="singapore.jpg" alt="Paris" width="350" height="350"><div class="b2">SINGAPORE</div></a>
+
+<div class="modal fade" id="myModal6" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"></h4>
+        </div>
+        <div class="modal-body">
+        	<div id="gallerywrapper">
+	    <div id="gallery">
+		    <div id="pic21">
+			    <img src="sing1.jpg" height="300" width="300" alt="Image 1">
+			    <a class="previous" href="#pic24">&lt;</a>
+			    <a class="next" href="#pic22">&gt;</a>
+			    <h3>Thian Hock Keng Temple</h3>
+			    
+		    </div>
+		    <div id="pic22">
+			    <img src="sing2.jpg" height="300" width="300" alt="Image 2">
+			    <a class="previous" href="#pic21">&lt;</a>
+			    <a class="next" href="#pic23">&gt;</a>
+			    <h3>Sentosa</h3>
+			    
+		    </div>
+		    <div id="pic23">
+			    <img src="sing3.jpg" height="300" width="300" alt="Image 3">
+			    <a class="previous" href="#pic22">&lt;</a>
+			    <a class="next" href="#pic24">&gt;</a>
+			    <h3>Universal Studios</h3>
+			    
+			</div>
+			<div id="pic24">
+			    <img src="sing4.jpg" height="300" width="300" alt="Image 4">
+			    <a class="previous" href="#pic23">&lt;</a>
+			    <a class="next" href="#pic21">&gt;</a>
+			    <h3>Merlion</h3>
+			    
+		    </div>
+		    
+	    </div>
+	</div>
+          <p>Singapore is known as a bustling metropolis that also happens to be one of the cleanest and safest cities of its size in the world. (Just make sure you heed the local laws—something like spitting in the street might merely be considered rude in your hometown, but here, it carries a severe penalty.) You&rsquo;ll find historic sites like the Thian Hock Keng temple, superlative shopping (including gargantuan malls) and numerous beaches. </p>
+        </div>
+        <div class="modal-footer">
+        	<button type="button" class="btn btn-default" onclick="location.href='ssamp.html'">Book Now</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+<a data-toggle="modal" data-target="#myModal7" class="b1"><img src="sydney.jpg" alt="Paris" width="350" height="350"><div class="b2">SYDNEY</div></a>
+
+<div class="modal fade" id="myModal7" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"></h4>
+        </div>
+        <div class="modal-body">
+        	<div id="gallerywrapper">
+	    <div id="gallery">
+		    <div id="pic25">
+			    <img src="syd1.jpg" height="300" width="300" alt="Image 1">
+			    <a class="previous" href="#pic28">&lt;</a>
+			    <a class="next" href="#pic26">&gt;</a>
+			    <h3>Bondo Beach</h3>
+			    
+		    </div>
+		    <div id="pic26">
+			    <img src="syd2.jpg" height="300" width="300" alt="Image 2">
+			    <a class="previous" href="#pic25">&lt;</a>
+			    <a class="next" href="#pic27">&gt;</a>
+			    <h3>Sydney Opera House</h3>
+			    
+		    </div>
+		    <div id="pic27">
+			    <img src="syd3.jpg" height="300" width="300" alt="Image 3">
+			    <a class="previous" href="#pic26">&lt;</a>
+			    <a class="next" href="#pic28">&gt;</a>
+			    <h3>Harbour Bridge</h3>
+			    
+			</div>
+			<div id="pic28">
+			    <img src="syd4.jpg" height="300" width="300" alt="Image 4">
+			    <a class="previous" href="#pic27">&lt;</a>
+			    <a class="next" href="#pic25">&gt;</a>
+			    <h3>Coogee Church</h3>
+			    
+		    </div>
+		    
+	    </div>
+	</div>
+          <p>City slickers, culture vultures and beach bums alike fall in love with Sydney. Hang ten at famed Bondi Beach or stroll the calmer sands of Coogee.  Cash burning a hole in your pocket? You&rsquo;ll find great shopping in the Rocks district and along George and Pitt Streets. Climb to the top of the Harbour Bridge or take a skywalk on Sydney Tower for a 360-degree view of the city. But whatever you do, don’t leave town without cuddling the koalas in the Taronga Park Zoo—they&rsquo;re ridiculously adorable. </p>
+        </div>
+        <div class="modal-footer">
+        	<button type="button" class="btn btn-default" onclick="location.href='ssamp.html'">Book Now</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+<a data-toggle="modal" data-target="#myModal8" class="b1"><img src="venice.jpg" alt="Paris" width="350" height="350"><div class="b2">VENICE</div></a>
+
+<div class="modal fade" id="myModal8" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"></h4>
+        </div>
+        <div class="modal-body">
+        	<div id="gallerywrapper">
+	    <div id="gallery">
+		    <div id="pic29">
+			    <img src="venice1.jpg" height="300" width="300" alt="Image 1">
+			    <a class="previous" href="#pic32">&lt;</a>
+			    <a class="next" href="#pic30">&gt;</a>
+			    <h3>San Marco</h3>
+			    
+		    </div>
+		    <div id="pic30">
+			    <img src="venice2.jpg" height="300" width="300" alt="Image 2">
+			    <a class="previous" href="#pic29">&lt;</a>
+			    <a class="next" href="#pic31">&gt;</a>
+			    <h3>Venezia di Palazzo</h3>
+			    
+		    </div>
+		    <div id="pic31">
+			    <img src="venice3.jpg" height="300" width="300" alt="Image 3">
+			    <a class="previous" href="#pic30">&lt;</a>
+			    <a class="next" href="#pic32">&gt;</a>
+			    <h3>Grand Canal</h3>
+			    
+			</div>
+			<div id="pic32">
+			    <img src="venice4.jpg" height="300" width="300" alt="Image 4">
+			    <a class="previous" href="#pic31">&lt;</a>
+			    <a class="next" href="#pic29">&gt;</a>
+			    <h3>Cafe Gratitude</h3>
+			    
+		    </div>
+		    
+	    </div>
+	</div>
+          <p>With its gondolas, canals, amazing restaurants, and unforgettable romantic ambiance, Venice is definitely a city for one&rsquo;s bucket list. Waterfront palazzos, palaces, and churches make drifting down the Grand Canal feel like cruising through a painting. To really experience Venice you must go to the opera or to a classical music performance, nibble fresh pasta and pastries, and linger in the exhibit halls of an art gallery. Label lovers will drool over the high-end shopping in Piazza San Marco. </p>
+        </div>
+        <div class="modal-footer">
+        	<button type="button" class="btn btn-default" onclick="location.href='ssamp.html'">Book Now</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+<a data-toggle="modal" data-target="#myModal9" class="b1"><img src="florence.jpg" alt="Paris" width="350" height="350"><div class="b2">FLORENCE</div></a>
+
+<div class="modal fade" id="myModal9" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title"></h4>
+        </div>
+        <div class="modal-body">
+        	<div id="gallerywrapper">
+	    <div id="gallery">
+		    <div id="pic33">
+			    <img src="flor1.jpg" height="300" width="300" alt="Image 1">
+			    <a class="previous" href="#pic36">&lt;</a>
+			    <a class="next" href="#pic34">&gt;</a>
+			    <h3>Piazzale Michelangelo</h3>
+			    
+		    </div>
+		    <div id="pic34">
+			    <img src="flor2.jpg" height="300" width="300" alt="Image 2">
+			    <a class="previous" href="#pic33">&lt;</a>
+			    <a class="next" href="#pic35">&gt;</a>
+			    <h3>Piazza Della</h3>
+			    
+		    </div>
+		    <div id="pic35">
+			    <img src="flor3.jpg" height="300" width="300" alt="Image 3">
+			    <a class="previous" href="#pic34">&lt;</a>
+			    <a class="next" href="#pic36">&gt;</a>
+			    <h3>Ridiven Building</h3>
+			    
+			</div>
+			<div id="pic36">
+			    <img src="flor4.jpg" height="300" width="300" alt="Image 4">
+			    <a class="previous" href="#pic35">&lt;</a>
+			    <a class="next" href="#pic33">&gt;</a>
+			    <h3>River Arno</h3>
+			    
+		    </div>
+		    
+	    </div>
+	</div>
+          <p>Everyone&rsquo;s heard the Doors of Paradise, the Duomo, and Michelangelo&rsquo;s David are captivating, but in Florence, beauty can sneak up on a traveller unexpectedly. You&rsquo;ll duck into a random church to escape the heat only to spend two hours staring at an impossibly pure blue in a fresco. Or you&rsquo;ll consider writing a sonnet about pear gelato. It&rsquo;s just that kind of place. Don't miss the sunset over the Arno and the famous wines of the Chianti region just south of town. </p>
+        </div>
+        <div class="modal-footer">
+        	<button type="button" class="btn btn-default" onclick="location.href='ssamp.html'">Book Now</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+
+</body>
+</html>
